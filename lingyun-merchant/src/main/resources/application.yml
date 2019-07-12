@@ -1,0 +1,11 @@
+server:
+  port: 12210
+spring:
+  application:
+    name: MERCHANT
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:12000/eureka
+

@@ -1,0 +1,16 @@
+server:
+  port: 12100
+spring:
+  application:
+    name: ZUUL
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:12000/eureka
+endpoints:
+  routes:
+    enabled: true
+management:
+  security:
+    enabled: false
