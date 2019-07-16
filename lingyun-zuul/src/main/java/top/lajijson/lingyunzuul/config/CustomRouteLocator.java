@@ -1,3 +1,4 @@
+/*
 package top.lajijson.lingyunzuul.config;
 
 import lombok.extern.slf4j.Slf4j;
@@ -72,3 +73,4 @@ public class CustomRouteLocator extends SimpleRouteLocator implements Refreshabl
 
 
 }
+*/

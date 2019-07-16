@@ -1,18 +1,15 @@
-package top.lajijson.lingyundataengine;
+package top.lajijson.lingyundatasource1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
-@EnableFeignClients
 @EnableEurekaClient
 @SpringBootApplication
-public class LingyunDataengineApplication {
+public class LingyunDatasource1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(LingyunDataengineApplication.class, args);
+        SpringApplication.run(LingyunDatasource1Application.class, args);
     }
 
 }
-

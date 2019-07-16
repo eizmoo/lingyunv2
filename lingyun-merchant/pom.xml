@@ -6,7 +6,7 @@
         <groupId>top.lajijson</groupId>
         <artifactId>lingyunv2</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>lingyun-merchant</artifactId>
     <version>0.0.1-SNAPSHOT</version>
