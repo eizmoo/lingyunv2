@@ -1,3 +1,4 @@
+/*
 package top.lajijson.lingyunzuul.config;
 
 import lombok.extern.slf4j.Slf4j;
@@ -17,12 +18,13 @@ public class ZuulConfig {
     @Autowired
     ServerProperties serverProperties;
 
-    /*@Bean
+    @Bean
     public CustomRouteLocator routeLocator() {
         log.info("servletPath{}", this.serverProperties.getServletPath());
         log.info("contextPath{}",this.serverProperties.getContextPath());
         CustomRouteLocator routeLocator = new CustomRouteLocator(this.serverProperties.getContextPath(), zuulProperties);
         return routeLocator;
-    }*/
+    }
 
 }
+*/

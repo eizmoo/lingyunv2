@@ -20,6 +20,7 @@
         <module>lingyun-eureka</module>
         <module>lingyun-merchant</module>
         <module>lingyun-zuul</module>
+        <module>lingyun-datasource1</module>
         <module>lingyun-dataengine</module>
     </modules>
 

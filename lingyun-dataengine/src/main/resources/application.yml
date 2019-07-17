@@ -1,9 +1,8 @@
 server:
-  port: 12310
+  port: 12220
 spring:
   application:
-    name: DATA-ENGINE
-
+    name: DATAENGINE
 eureka:
   client:
     service-url:

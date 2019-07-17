@@ -1,15 +1,11 @@
 package top.lajijson.lingyundataengine.endpoint;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 
-/**
- * 商户站点
- */
-@FeignClient("MERCHANT")
+@FeignClient(value = "merchant")
 public interface MerchantEndpoint {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/service/item/")
+    @GetMapping("/service/item/")
     String getItem();
 }

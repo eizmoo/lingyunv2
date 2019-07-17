@@ -58,13 +58,21 @@ public class CustomRouteLocator extends SimpleRouteLocator implements Refreshabl
 
     private Map<String, ZuulProperties.ZuulRoute> locateRoutesFromDB() {
         Map<String, ZuulProperties.ZuulRoute> map = new HashMap<>();
-        ZuulProperties.ZuulRoute zuulRoute = new ZuulProperties.ZuulRoute();
-        zuulRoute.setId("merchant");
-        zuulRoute.setServiceId("MERCHANT");
-        zuulRoute.setPath("/merchant/**");
-        zuulRoute.setRetryable(false);
-        zuulRoute.setStripPrefix(true);
-        map.put(zuulRoute.getPath(), zuulRoute);
+        ZuulProperties.ZuulRoute merchantRoute = new ZuulProperties.ZuulRoute();
+        merchantRoute.setId("MERCHANT");
+        merchantRoute.setServiceId("MERCHANT");
+        merchantRoute.setPath("/merchant/**");
+        merchantRoute.setRetryable(false);
+        merchantRoute.setStripPrefix(true);
+        map.put(merchantRoute.getPath(), merchantRoute);
+
+        ZuulProperties.ZuulRoute dataEngineRoute = new ZuulProperties.ZuulRoute();
+        dataEngineRoute.setId("DATAENGINE");
+        dataEngineRoute.setServiceId("DATAENGINE");
+        dataEngineRoute.setPath("/dataengine/**");
+        dataEngineRoute.setRetryable(false);
+        dataEngineRoute.setStripPrefix(true);
+        map.put(dataEngineRoute.getPath(), dataEngineRoute);
 
         return map;
 
