@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.lajijson.lingyundataengine.endpoint.MerchantEndpoint;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/")
 public class DemoController {
@@ -15,8 +18,9 @@ public class DemoController {
 
     @GetMapping("")
     public String getInfo() {
-        return merchantEndpoint.getItem();
-//        return "11";
+        Map<String, Object> params = new HashMap<>(1);
+        params.put("who", "david");
+        return merchantEndpoint.getItem(params);
     }
 
 }
