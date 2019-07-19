@@ -25,8 +25,8 @@ ribbon:
   MaxTotalConnections: 500
   #单个后端微服务实例能接收的最大请求并发数
   MaxConnectionsPerHost: 500
-  ReadTimeout: 2000
-  ConnectTimeout: 2000
+  ReadTimeout: 12000
+  ConnectTimeout: 12000
 
 hystrix:
   command:
@@ -36,4 +36,4 @@ hystrix:
           enable: false
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 120000

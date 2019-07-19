@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import top.lajijson.lingyunmerchant.entity.ServiceItem;
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 服务项controller层
@@ -19,6 +20,13 @@ public class ServiceItemController {
 
     @PostMapping("/")
     public String getItem(@RequestBody Map<String, Object> params) {
+        try {
+            log.info("i am here");
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         log.info("{}", params);
         ServiceItem serviceItem = new ServiceItem();
         serviceItem.setUri("/hello");
