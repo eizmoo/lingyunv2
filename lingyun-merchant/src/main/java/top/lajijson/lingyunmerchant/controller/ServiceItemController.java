@@ -2,10 +2,7 @@ package top.lajijson.lingyunmerchant.controller;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import top.lajijson.lingyunmerchant.entity.ServiceItem;
 
 import java.util.Map;
@@ -20,8 +17,8 @@ import java.util.Map;
 @RequestMapping("/service/item")
 public class ServiceItemController {
 
-    @GetMapping("/")
-    public String getItem(@RequestParam Map<String, Object> params) {
+    @PostMapping("/")
+    public String getItem(@RequestBody Map<String, Object> params) {
         log.info("{}", params);
         ServiceItem serviceItem = new ServiceItem();
         serviceItem.setUri("/hello");
