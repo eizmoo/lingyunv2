@@ -22,7 +22,7 @@ public class ServiceItemController {
     public String getItem(@RequestBody Map<String, Object> params) {
         try {
             log.info("i am here");
-            TimeUnit.SECONDS.sleep(5);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

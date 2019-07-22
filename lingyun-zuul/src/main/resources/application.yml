@@ -17,16 +17,16 @@ management:
 
 zuul:
   host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 600000
+    socket-timeout-millis: 120000
+    connect-timeout-millis: 120000
 
 ribbon:
   #Ribbon允许最大连接数，即所有后端微服务实例请求并发数之和的最大值。
   MaxTotalConnections: 500
   #单个后端微服务实例能接收的最大请求并发数
   MaxConnectionsPerHost: 500
-  ReadTimeout: 12000
-  ConnectTimeout: 12000
+  ReadTimeout: 120000
+  ConnectTimeout: 120000
 
 hystrix:
   command:

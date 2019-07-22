@@ -5,7 +5,7 @@ import feign.Retryer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class FeignClient {
 
     public static int connectTimeOutMillis = 12000;

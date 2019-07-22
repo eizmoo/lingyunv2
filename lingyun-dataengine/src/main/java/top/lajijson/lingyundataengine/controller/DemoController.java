@@ -20,7 +20,9 @@ public class DemoController {
     public String getInfo() {
         Map<String, Object> params = new HashMap<>(1);
         params.put("who", "david");
-        return merchantEndpoint.getItem(params);
+        String result = merchantEndpoint.getItem(params);
+        System.out.println("result: " + result);
+        return result;
     }
 
 }
