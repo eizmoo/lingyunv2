@@ -6,7 +6,7 @@ import top.lajijson.lingyundataengine.endpoint.MerchantEndpoint;
 import java.util.Map;
 
 @Service
-public class MerchantFallBack implements MerchantEndpoint {
+public class MerchantFallback implements MerchantEndpoint {
     @Override
     public String getItem(Map<String, Object> params) {
         return "服务调用失败";

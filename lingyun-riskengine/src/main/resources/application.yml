@@ -1,11 +1,11 @@
 server:
-  port: 12410
+  port: 12230
+  context-path: /riskengine
 spring:
   application:
-    name: DATABASES1
+    name: RISKENGINE
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:12000/eureka
-

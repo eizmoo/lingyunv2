@@ -1,5 +1,6 @@
 server:
   port: 12220
+  context-path: /dataengine
 spring:
   application:
     name: DATAENGINE

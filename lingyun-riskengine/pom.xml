@@ -8,10 +8,10 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>lingyun-dataengine</artifactId>
+    <artifactId>lingyun-riskengine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lingyun-dataengine</name>
-    <description>data engine</description>
+    <name>lingyun-riskengine</name>
+    <description>risk engine</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -27,17 +27,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <!--feign-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
 
         <dependency>

@@ -1,5 +1,6 @@
 server:
   port: 12100
+  context-path: /api
 spring:
   application:
     name: ZUUL
@@ -19,6 +20,17 @@ zuul:
   host:
     socket-timeout-millis: 120000
     connect-timeout-millis: 120000
+  routes:
+    dataengine:
+      path: /dataengine/**
+#      转发至服务时，带上path
+      stripPrefix: false
+    riskengine:
+      path: /riskengine/**
+      stripPrefix: false
+    merchant:
+      path: /merchant/**
+      stripPrefix: false
 
 ribbon:
   #Ribbon允许最大连接数，即所有后端微服务实例请求并发数之和的最大值。
